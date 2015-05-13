@@ -1,0 +1,10 @@
+---
+# tasks file for tools
+- name: Install basic tools
+  yum: name={{item}} state=installed
+  with_items:
+    - wget
+    - tar
+    - gzip
+    - bzip2
+    - curl
